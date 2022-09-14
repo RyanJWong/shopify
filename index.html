@@ -29,7 +29,7 @@
  <script>
   function makeCall() {
   $.ajax({
-           url: "https://libertymobileinc.com/WebServices/api/v1/Byod/validate_device?imei=" + document.getElementById("imei").value,
+           url: "https://cors-anywhere.herokuapp.com/https://libertymobileinc.com/WebServices/api/v1/Byod/validate_device?imei=" + document.getElementById("imei").value,
            headers: {
                 "Accept" : "text/json",
                 "Authorization" : "Basic Q2hhbXBwaG9uZTpDaGFtcHBob25lOTg3IQ== "
