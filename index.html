@@ -130,8 +130,11 @@
             mode: 'no-cors',
             type: "GET",
             success: function (result) {
-              if(result.ValidateOutcomes[0].StatusCodeName == "Success") {
+              if (result.ValidateOutcomes[0].StatusCodeName == "Success") {
                 document.getElementById('body').textContent = "Success! Check complete";
+              }
+              else {
+                document.getElementById('body').textContent = "API check failed. IMEI Invalid."
               }
             },
             error: function (error) {
