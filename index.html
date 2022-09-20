@@ -7,10 +7,9 @@
 </head>
 <body>
 
-<h2>Phone Number</h2>
 
 
-<label for="imei">Phone Number:</label><br>
+<label for="imei">IMEI:</label><br>
 
 <input id="imei" type="text" />
 
@@ -46,7 +45,7 @@
 
            },
            error: function (error) {
-           
+            document.getElementById('body').textContent = JSON.stringify(error);
            }
          });
     } 
