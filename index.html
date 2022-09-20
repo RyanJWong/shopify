@@ -119,7 +119,9 @@
 
  <script>
   function makeCall() {
+    document.getElementById('body').textContent = "Verifying IMEI...";
     $.ajax({
+      
             url: "https://cors-anywhere.herokuapp.com/https://libertymobileinc.com/WebServices/api/v1/Byod/validate_device?imei=" + document.getElementById("imei").value,
             headers: {
                   "Accept" : "text/json",
