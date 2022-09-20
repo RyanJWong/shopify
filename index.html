@@ -42,7 +42,7 @@
            mode: 'no-cors',
            type: "GET",
            success: function (result) {
-            document.getElementById('body').textContent = result;
+            document.getElementById('body').textContent = JSON.stringify(result);
 
            },
            error: function (error) {
